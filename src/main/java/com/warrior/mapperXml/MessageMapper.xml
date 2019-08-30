@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.MessageMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.Message">
+		<id column="MESSAGE_ID" property="messageId" />
+		<result column="USER_ID" property="userId" />
+		<result column="MESSAGE_CONTENT" property="messageContent" />
+		<result column="IS_READ" property="isRead" />
+		<result column="MESSAGE_TIME" property="messageTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MESSAGE_ID AS messageId, USER_ID AS userId, MESSAGE_CONTENT AS messageContent, IS_READ AS isRead, MESSAGE_TIME AS messageTime
+    </sql>
+
+</mapper>

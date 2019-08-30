@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.AddressMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.Address">
+		<id column="ADDR_ID" property="addrId" />
+		<result column="ADDR_CONTENT" property="addrContent" />
+		<result column="USER_ID" property="userId" />
+		<result column="TRUE_NAME" property="trueName" />
+		<result column="TELEPHONE" property="telephone" />
+		<result column="IS_DEFAULT" property="isDefault" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ADDR_ID AS addrId, ADDR_CONTENT AS addrContent, USER_ID AS userId, TRUE_NAME AS trueName, TELEPHONE AS telephone, IS_DEFAULT AS isDefault
+    </sql>
+
+</mapper>

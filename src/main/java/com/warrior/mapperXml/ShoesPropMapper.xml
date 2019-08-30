@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.ShoesPropMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.ShoesProp">
+		<id column="PROP_ID" property="propId" />
+		<result column="SHOE_COUNT_ID" property="shoeCountId" />
+		<result column="DIC_PARENT_ID" property="dicParentId" />
+		<result column="DIC_ID" property="dicId" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PROP_ID AS propId, SHOE_COUNT_ID AS shoeCountId, DIC_PARENT_ID AS dicParentId, DIC_ID AS dicId
+    </sql>
+
+</mapper>

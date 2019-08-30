@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.OrdersMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.Orders">
+		<id column="ORDER_ID" property="orderId" />
+		<result column="USER_ID" property="userId" />
+		<result column="ADDRESS" property="address" />
+		<result column="ORDER_STATUS" property="orderStatus" />
+		<result column="TOTAL_PRICE" property="totalPrice" />
+		<result column="GENERATE_TIME" property="generateTime" />
+		<result column="PAY_TIME" property="payTime" />
+		<result column="DELIVERY_TIME" property="deliveryTime" />
+		<result column="COMPLETED_TIME" property="completedTime" />
+		<result column="ORDER_REMARK" property="orderRemark" />
+		<result column="VIEW_STATUS" property="viewStatus" />
+		<result column="TRACKING_NUM" property="trackingNum" />
+		<result column="VIP_TOTAL_PRICE" property="vipTotalPrice" />
+		<result column="VIP_DISCOUNT" property="vipDiscount" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ORDER_ID AS orderId, USER_ID AS userId, ADDRESS AS address, ORDER_STATUS AS orderStatus, TOTAL_PRICE AS totalPrice, GENERATE_TIME AS generateTime, PAY_TIME AS payTime, DELIVERY_TIME AS deliveryTime, COMPLETED_TIME AS completedTime, ORDER_REMARK AS orderRemark, VIEW_STATUS AS viewStatus, TRACKING_NUM AS trackingNum, VIP_TOTAL_PRICE AS vipTotalPrice, VIP_DISCOUNT AS vipDiscount
+    </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.ShoesMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.Shoes">
+		<id column="SHOE_ID" property="shoeId" />
+		<result column="SHOE_NAME" property="shoeName" />
+		<result column="PRICE" property="price" />
+		<result column="SIZE" property="size" />
+		<result column="REST_COUNT" property="restCount" />
+		<result column="SHOE_COUNT_ID" property="shoeCountId" />
+		<result column="VERSION" property="version" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SHOE_ID AS shoeId, SHOE_NAME AS shoeName, PRICE AS price, SIZE AS size, REST_COUNT AS restCount, SHOE_COUNT_ID AS shoeCountId, VERSION AS version
+    </sql>
+
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.TemplateDetailsMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.TemplateDetails">
+		<id column="ID" property="id" />
+		<result column="DIC_PARENT_ID" property="dicParentId" />
+		<result column="DIC_ID" property="dicId" />
+		<result column="TEMPLATE_ID" property="templateId" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS id, DIC_PARENT_ID AS dicParentId, DIC_ID AS dicId, TEMPLATE_ID AS templateId
+    </sql>
+
+</mapper>

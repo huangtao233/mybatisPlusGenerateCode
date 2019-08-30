@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.ShoeEvaluationMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.ShoeEvaluation">
+		<id column="EVA_ID" property="evaId" />
+		<result column="USER_ID" property="userId" />
+		<result column="SHOE_ID" property="shoeId" />
+		<result column="EVA_TIME" property="evaTime" />
+		<result column="EVA_CONTENT" property="evaContent" />
+		<result column="ROOT_ID" property="rootId" />
+		<result column="TO_USERID" property="toUserid" />
+		<result column="EVA_TYPE" property="evaType" />
+		<result column="EVA_IMG" property="evaImg" />
+		<result column="EVA_STATUS" property="evaStatus" />
+		<result column="REJECT_REASON" property="rejectReason" />
+		<result column="APPEAL_REASON" property="appealReason" />
+		<result column="REJECT_AGAIN_REASON" property="rejectAgainReason" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EVA_ID AS evaId, USER_ID AS userId, SHOE_ID AS shoeId, EVA_TIME AS evaTime, EVA_CONTENT AS evaContent, ROOT_ID AS rootId, TO_USERID AS toUserid, EVA_TYPE AS evaType, EVA_IMG AS evaImg, EVA_STATUS AS evaStatus, REJECT_REASON AS rejectReason, APPEAL_REASON AS appealReason, REJECT_AGAIN_REASON AS rejectAgainReason
+    </sql>
+
+</mapper>
